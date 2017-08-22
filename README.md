@@ -48,7 +48,7 @@ than having to rebuild the app and refresh the browser when building web apps.
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** In the context of the pre-work where we are showing the user a list, an adapter is used by the list of items to generate a list of views. From the documentation, it appears that the convertView paramter passed into getView is the view that should be reused if possible. In the context of the todo app, when a user scrolls down the list, getView will be called to generate a new list item view, and converView will in this case be an item view that the user has scrolled past.
 
 ## Notes
 
